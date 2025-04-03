@@ -24,6 +24,8 @@ public class CarController : MonoBehaviour
             Debug.Log(Input.mousePosition);
 
             this.speed=swipeLength/500.0f;
+
+            GetComponent<AudioSource>().Play();
         }        
 
         transform.Translate(this.speed,0,0,Space.World);
